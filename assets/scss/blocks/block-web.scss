@@ -1,0 +1,35 @@
+.triangle{
+
+  &--dark{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0%);
+    height: 100px;
+    background: $dark;
+    z-index: -1;
+
+    @include media-breakpoint-down(md) {
+      padding-bottom: 60px;
+      display: block;
+      position: relative;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+    }
+  }
+
+  &--light{
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 0 0%);
+    height: 100px;
+    background: $dark;
+    z-index: -1;
+
+    @include media-breakpoint-down(md) {
+      padding-bottom: 60px;
+      display: block;
+      position: relative;
+      -webkit-clip-path: polygon(0 0,0 100%, 100% 90%, 0 100%);
+      clip-path: polygon(0 0,0 100% , 100% 100%, 0 50%);
+    }
+  }
+}
+

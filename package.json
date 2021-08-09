@@ -1,0 +1,26 @@
+{
+  "name": "explabs.ru",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "export": "nuxt export",
+    "serve": "nuxt serve"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.3.2",
+    "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "bootstrap": "^4.5.0",
+    "bootstrap-vue": "^2.15.0",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "nuxt": "^2.13.0",
+    "sass-loader": "^9.0.2",
+    "slick": "^1.12.2",
+    "slick-carousel": "^1.8.1",
+    "vue-slick": "^1.1.15"
+  },
+  "devDependencies": {}
+}

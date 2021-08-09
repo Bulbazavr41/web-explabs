@@ -1,0 +1,39 @@
+.card {
+  box-shadow: 0px 10px 45px rgba(4, 36, 59, 0.08);
+
+  transition: opacity .2s ease, transform .3s ease, -webkit-transform .3s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+  }
+
+  &__heading {
+    @extend .d-flex;
+
+    flex: 1 1 auto;
+  }
+
+  &__icon {
+
+  }
+
+  &--light {
+    background-color: $light;
+
+    color: $body-color;
+  }
+
+  &--dark {
+    background-color: $dark;
+
+    color: $white;
+  }
+
+  &--feature, &--event {
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 30px;
+    }
+  }
+}

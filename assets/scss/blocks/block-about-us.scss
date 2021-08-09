@@ -1,0 +1,20 @@
+.about_us{
+  img{
+    @include media-breakpoint-down(xl) {
+      width: 30rem ;
+    }
+
+    @include media-breakpoint-down(lg) {
+      max-width: 20rem ;
+    }
+
+    @include media-breakpoint-down(md) {
+      max-width: 15rem ;
+    }
+
+    @include media-breakpoint-down(xs) {
+      max-width: 20rem;
+      margin: 1rem;
+    }
+  }
+}

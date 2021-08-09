@@ -1,0 +1,40 @@
+.new{
+  background: #242424;
+  color: #F0F1F6;
+  
+  h1{
+    font-size: 2.5rem;
+  }
+
+  h2{
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 0.75em;
+  }
+
+  .card {
+    margin-top: 2rem;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    color: #454545;
+    padding: auto;
+
+
+    &__text {
+      font-size: 0.9rem;
+      line-height: 20px;
+    }
+
+    &__footer {
+      font-size: 16px;
+      align-items: flex-start;
+      color: #0575E6;
+    }
+    &__category{
+      font-size: 0.65rem;
+      display: flex;
+      color: #454545;
+      line-height: 0.7em;
+    }
+  }
+}

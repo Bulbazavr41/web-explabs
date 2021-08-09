@@ -1,0 +1,18 @@
+.card{
+  &--event {
+    @extend .d-flex;
+    @extend .justify-content-between;
+
+    flex: 1 1 auto;
+    flex-direction: row;
+
+    .card__icon {
+      font-size: 48px;
+      padding: 1.25rem;
+    }
+
+    .card__date {
+      @extend h3;
+    }
+  }
+}

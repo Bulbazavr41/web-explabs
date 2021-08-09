@@ -1,0 +1,133 @@
+@import "./_variables";
+@import "./_fonts";
+@import "~bootstrap/scss/bootstrap";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+
+
+body {
+  background-color: $light;
+
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+  min-height: 100vh;
+  transition: transform .4s ease;
+}
+
+.logo {
+  font-family: 'Exo 2', 'Exo', sans-serif;
+
+  &__bold {
+    font-weight: bold;
+  }
+}
+
+@import "~assets/scss/sections";
+@import "~assets/scss/illustrations";
+@import "~assets/scss/timeline";
+
+
+.card {
+  box-shadow: 0px 10px 45px rgba(4, 36, 59, 0.08);
+
+  transition: opacity .2s ease,transform .3s ease,-webkit-transform .3s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+  }
+
+  &__heading {
+    @extend .d-flex;
+
+    flex: 1 1 auto;
+  }
+
+  &--light {
+    background-color: $light;
+
+    color: $body-color;
+  }
+
+  &--dark {
+    background-color: $dark;
+
+    color: $white;
+  }
+
+  &--feature, &--event {
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &--feature {
+    cursor: pointer;
+
+    .card-title {
+      font-size: 1rem;
+      //font-weight: 300;
+    }
+
+    .card-text {
+      font-size: .75rem;
+      //font-weight: 300;
+    }
+
+    .card__heading {
+      @extend .d-flex;
+      @extend .justify-content-between;
+
+      flex: 1 1 auto;
+      flex-direction: row;
+    }
+
+    .card__icon {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  &--event {
+    @extend .d-flex;
+    @extend .justify-content-between;
+
+    flex: 1 1 auto;
+    flex-direction: row;
+
+    .card__icon {
+      font-size: 48px;
+      padding: 1.25rem;
+    }
+
+    .card__date {
+      @extend h3;
+    }
+  }
+}
+
+a.full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  border: 0 ;
+  opacity: 0;
+}
+
+@import "./blocks/block-footer.scss";
+@import "./blocks/block-web.scss";
+@import "./blocks/block-page-header.scss";
+@import "./cards.scss";
+@import "./blocks/block-about.scss";
+@import "./blocks/block-about-us.scss";
+@import "./blocks/block-robotehnic.scss";
+@import "./blocks/block-3d-model.scss";
+@import "./blocks/block-event.scss";

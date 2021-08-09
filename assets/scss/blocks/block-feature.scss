@@ -1,0 +1,29 @@
+.card{
+  &--feature {
+    cursor: pointer;
+
+    .card-title {
+      font-size: 1rem;
+      //font-weight: 300;
+    }
+
+    .card-text {
+      font-size: .75rem;
+      //font-weight: 300;
+    }
+
+    .card__heading {
+      @extend .d-flex;
+      @extend .justify-content-between;
+
+      flex: 1 1 auto;
+      flex-direction: row;
+    }
+
+    .card__icon {
+      width: 45px;
+      height: 45px;
+      margin-left: 1.25rem;
+    }
+  }
+}

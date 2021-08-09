@@ -1,0 +1,73 @@
+.illustration {
+  &--offcanvas {
+    position: absolute;
+    //overflow: hidden;
+    padding: 3rem;
+    //z-index: -1;
+  }
+
+  &--imac{
+    z-index: 1;
+    margin-left: -500px;
+    width: 50rem;
+
+    @include media-breakpoint-down(md) {
+      display: block;
+      max-width: 160%;
+      height: auto;
+      margin-top: 2rem ;
+      margin-left: -200px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      display: block;
+      max-width: 140%;
+      height: auto;
+      margin:1rem 0 2rem 0;
+      margin-top: -2rem;
+    }
+  }
+
+  &--macbook{
+    z-index: 1;
+    width: 60rem;
+    margin-top: 1rem;
+    margin-left: 10rem;
+
+    @include media-breakpoint-down(md) {
+      display: block;
+      max-width: 160%;
+      height: auto;
+      margin-top: 6rem ;
+      margin-left: -2 rem;
+    }
+
+    @include media-breakpoint-down(xs) {
+      display: block;
+      max-width: 140%;
+      height: auto;
+      margin:1rem 0 2rem 0;
+      margin-top: 2rem ;
+    }
+  }
+}
+
+.adaptive{
+  margin-left: -2rem;
+
+
+  @include media-breakpoint-down(md) {
+    display: block;
+    max-width: 120%;
+    height: auto;
+    margin-top: 6rem;
+    margin-left: -2rem;
+  }
+
+  @include media-breakpoint-down(xs) {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin:1rem 0 2rem 0;
+  }
+}
